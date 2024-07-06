@@ -1,0 +1,137 @@
+body{
+      background: #1D976C;  
+      background: -webkit-linear-gradient(to left, #93F9B9, #1D976C); 
+      background: linear-gradient(to left, #93F9B9, #1D976C); 
+  }
+div.login{
+      width: 400px;
+      background: white;
+      height: 305px;
+      padding: 50px 40px;
+      border-radius: 20px;
+      position: absolute;
+      top: 14%;
+      right: 29%;
+      transform: translate(-14%,+29%);
+}
+input[type=text], input[type=date], input[type="password"]{
+      margin: 5px auto;
+      width: 100%;
+      padding: 10px;
+      background: none;
+      outline: none;
+      border: none;
+      border-bottom: 3px solid gray;
+    }
+input[type="text"]:focus, input[type="password"]:focus{
+      border-bottom: 3px solid #16a085;
+      color: #16a085;
+      transition: 0.5s ease-in;
+}
+input[type=submit] {
+      margin : 18px;
+      float: right;
+      padding: 5px;
+      width: 90px;
+      border: 1px solid #fff;
+      color: black;
+      background: lightblue;
+      cursor: pointer;
+    }
+div.h{
+      position: absolute;
+      top:0;
+      left:0;
+      padding: 3% 43%;
+}
+a{
+      text-decoration: none;
+}
+.btn:hover{
+      background-position: right;
+}
+.btn{
+      position: absolute;
+      border: none;
+      padding: 24px;
+      width: 240px;
+      text-transform: uppercase;
+      border-radius: 10px;
+      cursor: pointer;
+      color: #fff;
+      background-size: 200%;
+      top: 78%;
+      left: 63%;
+      transform: translate(-78%,-63%);
+      background-image: linear-gradient(to left,#93F9B9, #1D976C);
+}
+div.ak{
+      position: absolute;
+      width: 200px;
+      top: 92%;
+      left: 68%;
+      transform: translate(-92%,-68%);
+}
+
+@-webkit-keyframes fadeInDownBig {
+  from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -2000px, 0);
+      transform: translate3d(0, -2000px, 0);
+  }
+
+  to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDownBig {
+  from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -2000px, 0);
+      transform: translate3d(0, -2000px, 0);
+  }
+
+  to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDownBig {
+      -webkit-animation-name: fadeInDownBig;
+      animation-name: fadeInDownBig;
+}
+.animated {
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+}
+h4 > a{
+      position: relative;
+      color: blue;
+      text-decoration: none;
+}
+h4 > a:before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: blue;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transform: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+}
+h4 > a:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+}
